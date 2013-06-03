@@ -1,0 +1,22 @@
+{
+   "browser_action": {
+      "default_icon": "images/icon.png",
+      "default_popup": "share.html",
+      "default_title": "LoginRadius Share"
+   },
+   "content_scripts": [ {
+      "js": [ "lib/jquery-1.8.3.min.js","js/load.js"],
+      "matches": [ "*://*/*" ]
+   }],
+   "description": "Share to friends using LoginRadius Share service",
+   "icons": {
+      "128": "images/icon.png",
+      "16": "images/icon.png"
+   },
+   "manifest_version": 2,
+   "name": "LoginRadius Share",
+ 
+   "permissions": [ "contextMenus","tabs"  ],
+   "version": "1.0",
+   "web_accessible_resources": ["lib/jquery-1.8.3.min.js","js/load.js","css/LoginRadiusShare.css","css/lrshare_iconsprite16.png"]
+}
